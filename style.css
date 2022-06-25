@@ -1,0 +1,107 @@
+body {
+  background: #F2D7D9;
+  font-family: 'Bebas Neue', cursive;;
+  color: #9CB4CC ;
+  font-size: 1em ;
+  line-height: 150% ;
+}
+
+.profile-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+  background-image: url("images/profile_pic.jpg");
+  background-size: cover;
+  background-position: -25px;  /*shift the photo within the cropped circle */
+}
+
+img {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
+.profile-card {
+  background: white;
+  color: #748DA6;
+  font-family: 'Space Mono', monospace;
+  font-size: 1em;
+  line-height: 0.8;
+  text-align: center;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.button-lightblue {
+  text-align: center;
+  color: #9CB4CC;
+  outline: none;
+}
+
+button {
+  color: #9CB4CC;
+  font-size: 1.5em;
+  padding: 8px;
+  font-weight: bold;
+  color: white;
+  background-color: #9CB4CC;
+  border: none;
+  border-radius: 5px;
+}
+
+
+.link-card {
+  background-color: white;
+  font-size: 50px;
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+
+a {
+float: left;
+}
+
+
+a > i {
+  display: block;
+  color: #748DA6;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 16px;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #F2D7D9;
+}
+
+button:hover {
+  text-decoration: none;
+  background-color: #F2D7D9;
+}
+
+/*media queries*/
+@media (min-width: 720px) {
+  /* For a screen < 960px, this CSS will be read */
+  .profile-card {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 720px) {
+
+  /* For a screen < 960px, this CSS will be read */
+  .link-card {
+    width: 20%;
+    margin: auto;
+    margin-top: 10vh;
+  }
+}
